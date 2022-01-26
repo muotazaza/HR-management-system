@@ -54,7 +54,11 @@ function employee(employeeID,full_name,Departmen,level,imageURL, salary,)
     this.imageURL
     this.salary
 }
-0.0075
+employee.prototype.render =function(){
+    employeeID
+
+
+}
 //for ()
 function getRandomNumberBetween(level)
 { var x ; 
