@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
@@ -34,6 +34,32 @@
       background-color: #04AA6D;
       color: white;
     }
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
+    .card {
+      /* Add shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      background-color: cyan;
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Add some padding inside the card container */
+    .container {
+      padding: 2px 16px;
+    }
   </style>
 </head>
 
@@ -55,16 +81,22 @@
       </div>
     </header>
     <main>
-      <script src="app.js/"></script>
+      <script src="./app.js"></script>
     </main>
     <div>
-      <section>
-        <form action="/app.js">
+
+
+
+
+      <section >
+        <form  id="employeeForm">
           <fieldset>
             <legend>employee:</legend>
             <label for="fname"> Full name:</label><br>
             <input type="text" id="fname" name="fname" value=" "><br>
 
+            <label for="imagesurl"> imagesurl:</label><br>
+            <input type="text" id="imagesurl" name="imagesurl" value=" "><br>
             <label for="Department ">Department :</label>
             <select name="Department " id="Department ">
               <optgroup label="Department">
@@ -72,20 +104,35 @@
                 <option value="Marketing">Marketing</option>
                 <option value="Development">Development</option>
                 <option value="Finance">Finance</option>
-              </optgroup>
-              <label for="Level ">Level :</label>
-              <select name="Level " id="Level ">
-                <optgroup label="Level">
-                  <option value="Junior">Junior</option>
-                  <option value="Mid-Senior">Mid-Senior</option>
-                  <option value="Senior">Senior</option>
+              </optgroup><br>
+            </select>
+            <br>
+            <label for="Level ">Level :</label>
+            <select name="Level " id="Level ">
+              <optgroup label="Level">
+                <option value="Junior">Junior</option>
+                <option value="Mid-Senior">Mid-Senior</option>
+                <option value="Senior">Senior</option>
 
             </select>
-            
+            <br>
+
+
             <input type="submit" value="Submit">
           </fieldset>
         </form>
       </section>
+      <section id=>
+        <div class="card" >
+          <img src="img_avatar2.png" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4>Jane Doe</h4>
+            <p>Interior Designer -name    -age </p>
+           
+          </div>
+        </div>
+      </section>
+
       <footer></footer>
   </body>
 
